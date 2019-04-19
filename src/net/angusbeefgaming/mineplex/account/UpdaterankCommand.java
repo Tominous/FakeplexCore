@@ -48,8 +48,8 @@ public class UpdaterankCommand implements CommandExecutor {
 			
 			ItemStack Item6 = nameItem(Material.IRON_BLOCK, ChatColor.GOLD + "Trainee Rank");
 			ItemStack Item7 = nameItem(Material.GOLD_BLOCK, ChatColor.GOLD + "Moderator Rank");
-			ItemStack Item8 = nameItem(Material.GOLD_BLOCK, ChatColor.GOLD + "Sr Mod Rank");
-			ItemStack Item9 = nameItem(Material.REDSTONE_BLOCK, ChatColor.DARK_RED + "Admin Rank");
+			ItemStack Item8 = nameItem(Material.GOLD_BLOCK, ChatColor.GOLD + "Senior Moderator Rank");
+			ItemStack Item9 = nameItem(Material.REDSTONE_BLOCK, ChatColor.DARK_RED + "Administrator Rank");
 			ItemStack Item10 = nameItem(Material.REDSTONE_BLOCK, ChatColor.DARK_RED + "Owner Rank");
 			ItemStack Item11 = nameItem(Material.GOLD_BLOCK, ChatColor.GOLD + "Developer Rank");
 			
@@ -168,9 +168,9 @@ public class UpdaterankCommand implements CommandExecutor {
 		}		
 		if(args[1].equals("MODERATOR")) {
 			Permissions.updateRank(args[0], Rank.MOD);
-			player.sendMessage(ChatColor.BLUE + "Client Manager> " + ChatColor.GRAY + args[0] + "'s rank has been Updated to Mod!");
+			player.sendMessage(ChatColor.BLUE + "Client Manager> " + ChatColor.GRAY + args[0] + "'s rank has been Updated to Moderator!");
 			if(Bukkit.getPlayer(args[0]) != null) {
-				Bukkit.getPlayer(args[0]).sendMessage(ChatColor.BLUE + "Client Manager> " + ChatColor.GRAY + "Your Rank has been updated to Mod!");
+				Bukkit.getPlayer(args[0]).sendMessage(ChatColor.BLUE + "Client Manager> " + ChatColor.GRAY + "Your Rank has been updated to Moderator!");
 			}
 			return true;
 		}
@@ -200,9 +200,9 @@ public class UpdaterankCommand implements CommandExecutor {
 		}	
 		if(args[1].equals("SRMOD")) {
 			Permissions.updateRank(args[0], Rank.SRMOD);
-			player.sendMessage(ChatColor.BLUE + "Client Manager> " + ChatColor.GRAY + args[0] + "'s rank has been Updated to Sr Mod!");
+			player.sendMessage(ChatColor.BLUE + "Client Manager> " + ChatColor.GRAY + args[0] + "'s rank has been Updated to Senior Moderator!");
 			if(Bukkit.getPlayer(args[0]) != null) {
-				Bukkit.getPlayer(args[0]).sendMessage(ChatColor.BLUE + "Client Manager> " + ChatColor.GRAY + "Your Rank has been updated to Sr Mod!");
+				Bukkit.getPlayer(args[0]).sendMessage(ChatColor.BLUE + "Client Manager> " + ChatColor.GRAY + "Your Rank has been updated to Senior Moderator!");
 			}
 			return true;
 		}
@@ -216,9 +216,9 @@ public class UpdaterankCommand implements CommandExecutor {
 		}		
 		if(args[1].equals("ADMIN")) {
 			Permissions.updateRank(args[0], Rank.ADMIN);
-			player.sendMessage(ChatColor.BLUE + "Client Manager> " + ChatColor.GRAY + args[0] + "'s rank has been Updated to Admin!");
+			player.sendMessage(ChatColor.BLUE + "Client Manager> " + ChatColor.GRAY + args[0] + "'s rank has been Updated to Administrator!");
 			if(Bukkit.getPlayer(args[0]) != null) {
-				Bukkit.getPlayer(args[0]).sendMessage(ChatColor.BLUE + "Client Manager> " + ChatColor.GRAY + "Your Rank has been updated to Admin!");
+				Bukkit.getPlayer(args[0]).sendMessage(ChatColor.BLUE + "Client Manager> " + ChatColor.GRAY + "Your Rank has been updated to Administrator!");
 			}
 			return true;
 		}
